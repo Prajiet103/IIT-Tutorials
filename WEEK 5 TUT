@@ -1,0 +1,115 @@
+# Error Questions
+# question 1
+#it wont print anything since virtues is a tuple not a list
+# Four virtues presented by Plato
+virtues = ("wisdom", "courage", "temperance", "justice")
+print(virtues[4])
+#question 2
+#list error can't have ints
+list1 = [1, "two", "three", 4]
+print(" ".join(list1))
+#question 3
+# it wont run beacuse of a missing semi colon and will keep on printing one 
+## Display the numbers from 1 through 5.
+num = 0
+while True
+    num = 1
+    print(num)
+    num += 1
+
+#Question 1
+#prediction 20
+num = 5
+while True:
+    num = 2 * num
+    if num % 4 == 0:
+    	break
+print(num)
+#question 2
+#prediction 18
+num = 3
+while num < 15:
+	num += 5
+print(num)
+#question 3
+# atlantic, pacific, antartic
+oceans = ["Atlantic", "Pacific", "Indian", "Arctic", "Antarctic"]
+i = len(oceans) - 1
+while i >= 0:
+    if len(oceans[i]) < 7:
+    	del oceans[i]
+    i=i-1
+print(", ".join(oceans))
+#question 3
+#x+y=z z+w=u
+total = 0
+count =0
+while count <3:
+ num = int(input("Enter a number: "))
+ total += num
+ count += 1
+print(total)
+
+print(sum)
+#question 4
+#6,8,10,12
+for i in range(3, 7):
+    print(2 * i)
+#question 5
+#5,6,7
+num = 5
+for i in range(num, 2*num - 2):
+	print(i)
+#question 6
+#10,9,8,7.....1
+for countdown in range(10, 0, -1):
+    print(countdown)
+#question 7
+# 3, 20
+numEvens = 0
+sumOfEvens = 0
+list1 = [2, 9, 6, 7, 12]
+for num in list1:
+    if num % 2 == 0:
+	    numEvens += 1
+	    sumOfEvens += num
+print(numEvens, sumOfEvens)
+#question 8
+#
+numOfNumbers = 0
+list1 = ["three", 4, 5.7, "six", "seven", 8, 3.1416]
+for item in list1:
+    if isinstance(item, str):
+        continue
+    numOfNumbers +=1
+print(numOfNumbers)
+#question 9
+#
+L = ["sentence", "contains", "five", "words."]
+L.insert(0, "This")
+print(" ".join(L))
+
+del L[3]
+L.insert(3, "six")
+L.insert(4, "different")
+print(" ".join(L))
+#question 10
+#hearth damith
+# Assume the name entered is: Damith Hearth
+name = input("Enter name with two parts: ")
+L = name.split()
+print("{0:s}, {1:s}".format(L[1], L[0]))
+#question 11
+#LARGEST NUMBER: 8
+#LENGTH: 4
+#TOTAL: 17
+nums = [6, 2, 8, 1]
+print("Largest Number:", max(nums))
+print("Length:", len(nums))
+print("Total:", sum(nums))
+# question 12
+#when in the course of human events
+tuple1 = ("course", "of", "human", "events", "When", "in", "the")
+tuple2 = tuple1[4:] + tuple1[:4]
+print(" ".join(tuple2))
+
